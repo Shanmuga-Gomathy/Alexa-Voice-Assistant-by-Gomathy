@@ -1,74 +1,85 @@
 # Alexa-Voice-Assistant-by-Gomathy
-🗣️ Python Voice Assistant (Alexa-like) with Weather, Jokes, Wikipedia & YouTube
-A Python-based voice assistant using speech_recognition, pyttsx3, and various APIs that responds to natural voice commands. You can ask it to play music, fetch weather, tell jokes, provide info, and more!
+ 
+# 🗣️ Python Voice Assistant (Alexa-like)
 
-🔍 Features
-🎶 Play Songs – Searches YouTube and plays requested music.
+A Python-based offline/online voice assistant that uses speech recognition and text-to-speech to interact with users. It can play songs, tell jokes, fetch weather updates, read Wikipedia summaries, and more — all via voice commands.
 
-🤣 Tell Jokes – Pulls safe jokes from JokeAPI (random or topic-specific).
+---
 
-🌦️ Weather Info – Uses WeatherAPI to fetch real-time weather by city.
+## 🔍 Features
 
-📚 Wikipedia Summary – Summarizes any topic in 2 lines.
+- 🎶 Play Songs – Searches YouTube and plays your requested music.
+- 🌦️ Weather Info – Fetches live weather using WeatherAPI.
+- 📚 Wikipedia Summaries – Gives concise info about topics or people.
+- 🤣 Jokes – Uses JokeAPI to make you laugh.
+- 💬 Motivational Quotes – Encouraging messages to lift your mood.
+- 🎙️ Voice Wake & Stop – Commands like “Hey Alexa” or “Stop” are supported.
 
-💬 Motivational Quotes – Built-in list of inspiring messages.
+---
 
-🎙️ Wake/Stop Commands – Use voice to start, stop, or pause assistant.
+## 🧠 Technologies Used
 
-📦 Technologies Used
-speech_recognition – Converts voice to text
+- speech_recognition – Speech-to-text from microphone
+- pyttsx3 – Offline text-to-speech
+- wikipedia – Fetches 2-line summaries
+- pywhatkit – Plays YouTube videos
+- webbrowser – Opens YouTube songs
+- requests – Fetches jokes & weather data
 
-pyttsx3 – Text-to-speech (offline)
+---
 
-requests – HTTP API calls
+## 📦 File Structure
 
-wikipedia – Fetches summaries
-
-pywhatkit – For YouTube interaction (optional)
-
-webbrowser – Opens browser to play songs
-
-📁 File Structure
-css
-Copy
-Edit
 .
-├── voice_assistant.py     # Main code file
-├── README.md
-├── requirements.txt
-└── .gitignore
-🚀 Setup Instructions
-Install dependencies:
+├── voice_assistant.py     # Main program
+├── requirements.txt       # Python dependencies
+└── README.md              # You're reading it
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Replace API Key
-In get_weather(city), replace api_key = 'your_api_key_here' with your own from https://www.weatherapi.com/.
+---
 
-Run the assistant:
+## 🚀 Setup Instructions
 
-bash
-Copy
-Edit
-python voice_assistant.py
-🔐 Required APIs
-✅ WeatherAPI Key
+1. Clone the repository or download the files.
 
-✅ JokeAPI (No key required)
+2. Install dependencies:
+   pip install -r requirements.txt
 
-🧠 Voice Commands You Can Try
-"Play [song name]"
+3. Get a WeatherAPI key:  
+   - Sign up at https://www.weatherapi.com  
+   - Replace the placeholder `api_key` in the script with your own.
 
-"Tell me about [topic]"
+4. Run the assistant:
+   python voice_assistant.py
 
-"Tell me a joke" / "Make me laugh about dogs"
+---
 
-"Weather in [city]"
+## 🔐 Required APIs
 
-"Motivate me"
+- WeatherAPI – Required for weather info (Free tier available)
+- JokeAPI – No key required
 
-"Thank you" / "Stop" / "Exit"
+---
 
-"Hey Alexa" (wake word)
+## 🎤 Sample Voice Commands
+
+- “Play Shape of You”
+- “Tell me about Einstein”
+- “What’s the weather in Delhi?”
+- “Tell me a joke about cats”
+- “Motivate me”
+- “Stop”
+- “Hey Alexa” (to wake the assistant again)
+
+---
+
+## 🤖 Notes
+
+- The assistant uses Google Speech Recognition (requires internet).
+- Text-to-speech works offline.
+- Jokes and weather fetching require internet.
+
+---
+
+## 📄 License
+
+This project is free and open-source under the MIT License.
